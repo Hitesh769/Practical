@@ -12,6 +12,7 @@
     <color name="grey_text_color">#9B8989</color>
     <color name="grey">#888686</color>
     <color name="lightGrey">#D3D2D2</color>
+    <color name="view_color">#e7e7e7</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorred_trans">#20E53935</color>
@@ -19,4 +20,5 @@
     <color name="colorhome2">#38d0db</color>
     <color name="colorhome3">#484eda</color>
     <color name="colorhome4">#fa872e</color>
+    <color name="btn_background">#ddccbb</color>
 </resources>
