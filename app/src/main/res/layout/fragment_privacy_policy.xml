@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.SecondFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet. Quo itaque necessitatibus ut mollitia iusto ex voluptas enim hic corporis nihil eum vero nostrum cum asperiores aperiam et explicabo doloremque! Eum quia debitis aut porro voluptatem est eligendi fuga qui voluptatem asperiores et dolorem placeat et distinctio sint qui internos eligendi. Aut aspernatur temporibus qui praesentium necessitatibus qui optio sunt.
+
+/n/n33 corporis doloremque sit distinctio rerum sed vitae repudiandae qui fugit tempora. Excepturi sint At libero ratione cum iure possimus.
+
+Qui nihil ratione qui optio magni a error quia a nihil dicta. Et totam recusandae ut consequuntur saepe non amet incidunt."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>
