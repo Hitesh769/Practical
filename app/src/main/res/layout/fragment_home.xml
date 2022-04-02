@@ -77,54 +77,106 @@
             android:elevation="@dimen/_5sdp"
             app:cardCornerRadius="@dimen/_7sdp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <RelativeLayout
+                <include
+                    android:id="@+id/llWallet"
+                    layout="@layout/row_home" />
+
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/llWallet"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/lightGrey" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/ivIcon1"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:src="@drawable/ic_baseline_person_outline_24"
-                        app:civ_border_color="@color/grey_text_color"
-                        app:civ_border_overlay="false"
-                        app:civ_border_width="1dp"
-                        app:civ_circle_background_color="@color/colorWhite"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <include
+                    android:id="@+id/llSetting"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    layout="@layout/row_home" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/tvName1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_toStartOf="@+id/ivArrow1"
-                        android:layout_toEndOf="@+id/ivIcon1"
-                        android:text="My Wallet"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12sdp"
-                        android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/llWallet"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/lightGrey" />
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/ivArrow1"
-                        android:src=""
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_10sdp" />
-                </RelativeLayout>
+                <include
+                    android:id="@+id/llGifting"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    layout="@layout/row_home" />
 
-            </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/llWallet"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/lightGrey" />
+                <include
+                    android:id="@+id/llSuport"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    layout="@layout/row_home" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/llWallet"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/lightGrey" />
+
+                <include
+                    android:id="@+id/llPrivacyPolicy"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    layout="@layout/row_home" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/llWallet"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/lightGrey" />
+                <include
+                    android:id="@+id/llTermsOfUse"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    layout="@layout/row_home" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/llWallet"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/lightGrey" />
+                <include
+                    android:id="@+id/llAppVersion"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    layout="@layout/row_home" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/llWallet"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/lightGrey" />
+
+
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
 

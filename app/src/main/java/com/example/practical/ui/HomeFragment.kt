@@ -64,22 +64,40 @@ class HomeFragment : Fragment() {
         sliderlist.add(SliderImage(activity!!,R.drawable.slider_one))
         sliderlist.add(SliderImage(activity!!,R.drawable.slider_two))
 
-      /*  setSliderAdapter(sliderlist)
 
-        binding.llBooking.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome1))
-        binding.llMyVehicle.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome2))
-        binding.llMyWallet.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome3))
-        binding.llGiftCard.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome4))
+        binding.llWallet.ivIcon1.setImageResource(R.drawable.wallet)
+        binding.llSetting.ivIcon1.setImageResource(R.drawable.wallet)
+        binding.llGifting.ivIcon1.setImageResource(R.drawable.wallet)
+        binding.llSuport.ivIcon1.setImageResource(R.drawable.wallet)
+        binding.llPrivacyPolicy.ivIcon1.setImageResource(R.drawable.wallet)
+        binding.llTermsOfUse.ivIcon1.setImageResource(R.drawable.wallet)
+        binding.llAppVersion.ivIcon1.setImageResource(R.drawable.wallet)
 
-        binding.llBooking.tvName.text="My Booking"
-        binding.llMyVehicle.tvName.text="My Vehicles"
-        binding.llMyWallet.tvName.text="My Wallet"
-        binding.llGiftCard.tvName.text="Gift Card"
+        binding.llWallet.tvName1.text="My Wallet"
+        binding.llSetting.tvName1.text="Settings"
+        binding.llGifting.tvName1.text="Gifting Friends"
+        binding.llSuport.tvName1.text="Support"
+        binding.llPrivacyPolicy.tvName1.text="Privacy Policy"
+        binding.llTermsOfUse.tvName1.text="Terms Of Use"
+        binding.llAppVersion.tvName1.text="App Version 1.0"
 
-        binding.llBooking.ivLogo.setImageResource(R.drawable.bookings)
-        binding.llMyVehicle.ivLogo.setImageResource(R.drawable.vehicle)
-        binding.llMyWallet.ivLogo.setImageResource(R.drawable.wallet)
-        binding.llGiftCard.ivLogo.setImageResource(R.drawable.gift)*/
+
+        /*  setSliderAdapter(sliderlist)
+
+          binding.llBooking.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome1))
+          binding.llMyVehicle.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome2))
+          binding.llMyWallet.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome3))
+          binding.llGiftCard.cvMain.setCardBackgroundColor(ContextCompat.getColor(context!!,R.color.colorhome4))
+
+          binding.llBooking.tvName.text="My Booking"
+          binding.llMyVehicle.tvName.text="My Vehicles"
+          binding.llMyWallet.tvName.text="My Wallet"
+          binding.llGiftCard.tvName.text="Gift Card"
+
+          binding.llBooking.ivLogo.setImageResource(R.drawable.bookings)
+          binding.llMyVehicle.ivLogo.setImageResource(R.drawable.vehicle)
+          binding.llMyWallet.ivLogo.setImageResource(R.drawable.wallet)
+          binding.llGiftCard.ivLogo.setImageResource(R.drawable.gift)*/
 
 
     }
