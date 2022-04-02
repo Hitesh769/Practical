@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:id="@+id/cvRummy"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:clipToPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:background="@drawable/ic_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_background"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGameType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Game Type"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_left"
+            app:layout_constraintEnd_toStartOf="@+id/ivRight"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGameType" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="101 Pool"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLeft"
+            app:layout_constraintEnd_toEndOf="@+id/ivLeft"
+            app:layout_constraintStart_toStartOf="@+id/ivLeft"
+            app:layout_constraintTop_toTopOf="@+id/ivLeft" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRight"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivLeft"
+            app:layout_constraintTop_toTopOf="@+id/ivLeft" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="201 Pool"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRight"
+            app:layout_constraintEnd_toEndOf="@+id/ivRight"
+            app:layout_constraintStart_toStartOf="@+id/ivRight"
+            app:layout_constraintTop_toTopOf="@+id/ivRight" />
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/barrier"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="ivLeft,ivRight"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProgress"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier"
+             />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMinus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProgress"
+            app:layout_constraintTop_toTopOf="@+id/ivProgress"
+            app:srcCompat="@drawable/ic_minus" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPlus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/ivProgress"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProgress"
+            app:layout_constraintTop_toTopOf="@+id/ivMinus"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEntryFee"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivProgress"
+            app:srcCompat="@drawable/ic_entryfee" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEntryFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entry Fee: 5"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ivEntryFee"
+            app:layout_constraintEnd_toEndOf="@+id/ivEntryFee"
+            app:layout_constraintStart_toStartOf="@+id/ivEntryFee"
+            app:layout_constraintTop_toTopOf="@+id/ivEntryFee" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ivPayNow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivEntryFee"
+            app:srcCompat="@drawable/ic_paynow" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/ic_rummy_header" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POOL RUMMY"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHeader"
+        app:layout_constraintEnd_toEndOf="@+id/ivHeader"
+        app:layout_constraintStart_toStartOf="@+id/ivHeader"
+        app:layout_constraintTop_toTopOf="@+id/ivHeader" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCross"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_cancel"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
